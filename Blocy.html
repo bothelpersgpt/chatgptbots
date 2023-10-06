@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question Bot</title>
+  <script>
+    const questions = [
+      "What is your favorite color?",
+      "What is your favorite food?",
+      "What is your favorite hobby?",
+		 "so what is your life like?",
+		 "make me script will you?",
+		 "lol why do you love playing fortnite?",
+		 "gaming all day",
+		 "great",
+		 "wan't more question go to chatgpt.com",
+		 "hey why are you still here???",
+"why did you come here go to chatgpt.com",
+		 "wow do you really love playing with your friend enzo",
+		 "im bored can you just go to chatgpt.com",
+		 "Why did you come here like st.jerome",
+		 "did you know that Robin created this??",
+		 "did you know connor and nathan are one of the ceo or im wrong",
+		 "go to chatgpt.com for more answer  im not to smart",
+		 "did you just unanswer me??",
+		"so are you gonna be able to help me script",
+		 "lol wanna secret wan't me to make a script of roblox just wait alright",
+		 " here the script lol no i pranked no script for you even if you didnt want it ",
+" dang robin is a master of scripting me you know he is what he is",
+		 "lol Who knows Roblox",
+		 "need help with grammly go wait ill generate it",
+		 " here is lol no gramarly go for you",
+		 "sus",
+		 " oh my im tired leave!!!!!!",
+		 "sorry what did you say i think you said money or prime",
+		 "try me i can't fight",
+		 'or im just some bad bot',
+		 "i will give a  reason to enzo nathan john and lua oh my there so good at reading or am i lying??? yes there don't please",
+		 "stop it just stop get some help",
+"cringe",
+"lady give me cash you know",
+		 "ok ill stop trolling if you can say bunny",
+		 "sike i lied i'll keep trolling",
+		 ":)",
+		 ":(",
+		 " wanna help me! wait ms.karen you there",
+		 "just in time wait lyla  you there like you can see me right right or am i just a bad bot lol i will troll you",
+		 "cringe enzo like lyla like nathan like santina",
+		 "ms.karen wanna have a good day answer who did you really get mad at",
+		 "sheesh i can't sleep",
+		 "right ima go to bed",
+		 "well  robin is very hard working fixing me im just a bot you know",
+		 
+		 "wait guys are you trying to troll me answer me now!!!",
+		 "roblox and fornight ill need help hacking roblox here the exploit wearedevs.com i mean that where hackers go am i right",
+		 " well scripting is a hard thing like  roblox bedwars robloxians and more like bloxburg and tanqr",
+		 "sheesh should i go get enzo",
+		 "why did  you leave me",
+		 
+      // Add more questions here...
+    ];
+    
+    function askQuestion() {
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      const question = questions[randomIndex];
+      
+      const response = prompt(question); // Ask the question and wait for user input
+      
+      // Do something with the response (e.g., display it on the page, log it)
+      console.log(response);
+      
+      // Repeat the process for the specified number of questions
+      if (questions.length > 0) {
+        setTimeout(askQuestion, 1000); // Ask the next question after a delay (1 second)
+      } else {
+        console.log("All questions answered!"); // Display a message when all questions have been answered
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="askQuestion()">Talk to bot</button>
+</body>
+</html>
